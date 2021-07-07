@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  padding: 10px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.title .fall {
+  color: #31d8de;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 3px #376fa0;
+}
+
+.title .guys {
+  color: #f73ca3;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 3px #b30b7a;
+}
+
+section {
+  padding: 20px;
+  background-image: url('../images/Fallguys.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 230px;
+  background-color: #f099c9e3;
+  padding: 20px;
+  float: right;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.mb {
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.botao {
+  color: white;
+  background-color: #48c5ce;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #f73ca3;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url('../images/arrow.jpg');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+}
+
+footer {
+  background-color: #202121;
+  padding: 40px;
+  text-align: center;
+}
+
+.picture {
+  width: 160px;
+  clip-path: circle();
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  max-width: 40%;
+  margin-left: 40px;
+}
+
+.description p,
+.description h3 {
+  margin-bottom: 20px;
+}
+
+.description h3 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .formContainer {
+    float: none;
+    margin: auto;
+  }
+
+  .picture {
+    margin: auto;
+  }
+
+  .description {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+}
